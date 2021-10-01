@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatsApp chat without saving their contact</title>
+    <meta name="author" content="Nivesh Saharan">
+    <meta name="description" content="Chat with anyone on WhatsApp without saving their number in contacts!">
+
+    <link href="./css/app.css" rel="stylesheet">
+</head>
+<body class="body-bg min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0">
+<header class="max-w-lg mx-auto">
+    <a href="#">
+        <h1 class="text-4xl font-bold text-white text-center">Start WhatsApp Chat with:</h1>
+    </a>
+</header>
+
+<main class="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
+    <section>
+        <h3 class="font-bold text-2xl">Enter Phone No. and click Chat button</h3>
+    </section>
+
+    <section class="mt-10">
+        <form class="flex flex-col" method="GET" action="https://api.whatsapp.com/send/?app_absent=0">
+            <div class="mb-6 pt-3 rounded bg-gray-200">
+                <label class="block text-gray-700 text-sm font-bold mb-2 ml-3" for="phone">Phone No. with country code</label>
+                <input inputmode="numeric" type="tel" name="phone" id="phone" class="bg-gray-200 rounded w-full text-gray-700 focus:outline-none border-b-4 border-gray-300 focus:border-purple-600 transition duration-500 px-3 pb-3" placeholder="+91987654210" value="+91">
+            </div>
+
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit">Start Chat</button>
+        </form>
+    </section>
+</main>
+
+</body>
+</html>
